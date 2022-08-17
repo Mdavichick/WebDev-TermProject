@@ -6,16 +6,6 @@ The purpose of this repository is to store all the code for your web application
 
 Please follow the instructions below and fill in the information requested when prompted.
 
-## Student Information
-
-|               | Information   |
-|:-------------:|:-------------:|
-| Student Name  | Michael Davichick|
-| Student ID    | 920196625     |
-| Student Email | Mdavichick@mail.sfsu.edu|
-
-
-
 # Build/Run Instructions
 
 ## Build Instructions
