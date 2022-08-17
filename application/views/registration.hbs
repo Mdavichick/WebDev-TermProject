@@ -1,0 +1,63 @@
+<link rel="stylesheet" type = "text/css" href="public/css/grid.css"/>
+<link rel="stylesheet" type = "text/css" href="public/css/forms.css"/>
+
+<header class = "box-shadow-light">
+    <h1>Registration Form</h1>
+</header>
+
+<div class="row">
+<!--    form action="/dbtest/createUser"-->
+    <form action="/users/register" name="registration" method="POST"
+    encType="application/x-www-form-urlencoded">
+
+    <div class = "col-md-3">
+        <div class>
+            <img src="https://www2.calstate.edu/PublishingImages/Pages/SF_State_sign2.jpg" width="90%" height="100%" alt = "This was a fake image"></img>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="flex-item">
+            <label>Username</label>
+            <input type="text" id="username" required placeholder="username" name="username"/>
+            <br/>
+
+            <label>Email</label>
+            <input type="email" required placeholder="email" name="email"/>
+            <br/>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="flex-item">
+            <label>Password</label>
+            <input type = "password" id = "password" required placeholder = "password" name = "password" />  <!-- for testing purposes -->
+
+            <br/>
+
+            <label>Confirm PW</label>
+            <input type = "password" id = "confirmpw" required placeholder = "password" name = "confirmpw" />  <!-- for testing purposes -->
+            <br/>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="flex-item">
+            <label>Age 13+</label>
+            <input type ="checkbox" required/>
+            <br/>
+            <a href = "https://policies.google.com/terms?hl=en-US">TOS & Privacy</a>
+            <input type ="checkbox" required/>
+            <br/>
+            <br/>
+            <button id = "submit" type="submit">Submit</button>
+            <button id ="cancel" type ="reset">Cancel</button>
+        </div>
+    </div>
+
+</form>
+</div>
+<script type="text/javascript" src="../public/js/formValidation.js"></script>
+<br><br>
+<br><br>
+
+
+

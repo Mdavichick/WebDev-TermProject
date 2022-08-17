@@ -1,0 +1,34 @@
+ <link rel="stylesheet" type = "text/css" href = "public/css/forms.css">
+ <link rel="stylesheet" type = "text/css" href = "public/css/grid.css">
+
+  <div class = "grid-container shadow">
+        <header class="site-header box-shadow-light">
+            <h1>Welcome!</h1>
+        </header>
+
+        <aside class ="image-lsidebar">
+                <form id="login-form" method="POST" action="/users/login"
+                enctype="application/x-www-form-urlencoded">
+                <fieldset class ="test">
+                        <legend>Login Information</legend>
+
+                        <label class = "txt-label"> Username: </label>
+                        <input type="text" placeholder = "Username"
+                        name="username"/>
+                        <br/>
+
+                        <label class = "txt-label"> Password: </label>
+                        <input type = "password" placeholder = "Password"
+                        name="password"/>
+                        <br/>
+
+                        <button type="submit">Submit</button>
+                </fieldset>
+                </form>
+        </aside>
+        <div class = "sfsu-post shadow">
+            <img src="https://www2.calstate.edu/PublishingImages/Pages/SF_State_sign2.jpg" width="100%" height="100%" alt = "This was a fake image"></img>
+        </div>
+
+        <aside class ="site-rsidebar"></aside>
+    </div>

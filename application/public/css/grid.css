@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: auto;
+}
+
+.grid-container{
+    display: grid;
+    height: 80vh;
+    margin: 20px auto auto auto;
+    width: 100%;
+    grid-template-rows: repeat(4,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 1fr;
+    /*grid-auto-rows: 75px;*/
+    grid-auto-columns: 1fr;
+    gap: .25rem;
+    grid-template-areas:
+    "header header header header"
+    "lsidebar content content rsidebar"
+    "lsidebar content content rsidebar"
+    "lsidebar content content rsidebar";
+}
+
+nav{
+    display:flex;
+}
+nav>div{
+   flex: 1 1 auto;
+}
+
+.shadow{
+    border: 1px solid #cccccc;
+    box-shadow: 0 2px 2px #eeeeee;
+}
+
+.reddit-post{
+    margin-bottom: 4px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+    /*height: 50px;*/
+}
+
+.sfsu-post{
+    margin-bottom: 4px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: left;
+}
+
+
+.site-header{
+    background-color: mediumpurple;
+    /*start row, col start, row end, col end*/
+    /*grid-area: 1 / 1 / 2 / 5;*/
+    grid-area: header;
+    align-text: center;
+    display: revert;
+
+}
+.image-post{
+    margin-bottom: 4px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
+.image-image{
+    margin-bottom: 4px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.image-header{
+    background-color: #b8b2b2;
+    grid-area: header;
+    text-align: center;
+    margin-bottom: 2px;
+    height: 25px;
+}
+
+.image-lsidebar{
+    grid-area: lsidebar;
+}
+.image-rsidebar{
+    grid-area: rsidebar;
+}
+
+.site-lsidebar{
+    background-color: #a7a3a3;
+    /*grid-area: 2 / 1 / 5/ 2;*/
+    grid-area: lsidebar;
+}
+
+.site-rsidebar{
+    /*background-color: darkcyan;*/
+    /*grid-area: 2 / 4 / 5/ 5;*/
+    grid-area: rsidebar;
+}
+
+.site-content{
+    background-color: darkgoldenrod;
+    /*grid-area: 2 / 2 / 5 / 4;*/
+    grid-area: content;
+}
+
+.site-footer{
+    background-color: darkgreen;
+    /*grid-area: 5 / 1 / 6 /5;*/
+    grid-area: footer;
+}
+
+@media screen and (max-width: 500px){
+    .grid-container{
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: repeat(3,1fr);
+        gap: .15em;
+        grid-template-areas:
+        "header header header"
+        "lsidebar content content"
+        "lsidebar content content"
+        "lsidebar content content"
+        "rsidebar rsidebar rsidebar"
+        "footer footer footer";
+    }
+    /*.site-header{*/
+    /*    grid-area: 1 / 1 / 2 / 4;*/
+    /*}*/
+    /*.site-lsidebar{*/
+    /*    grid-area: 2 / 1 / 4 / 2;*/
+    /*}*/
+    /*.site-rsidebar{*/
+    /*    grid-area: 4 / 1 / 5 / 4;*/
+    /*}*/
+    /*.site-content{*/
+    /*    grid-area: 2 / 2 / 4 / 4;*/
+
+    /*}*/
+    /*.site-footer{*/
+    /*    grid-area: 5 / 1 / 6 /4;*/
+    /*}*/
+}
+
+@media screen and (max-width: 350px){
+    .grid-container{
+        grid-template-rows: repeat(5,1fr);
+        grid-template-columns: 1fr;
+        gap: .15em;
+        grid-template-areas:
+        "header"
+        "lsidebar"
+        "content"
+        "rsidebar"
+        "footer";
+    }
+
+    /*.site-header{*/
+    /*    grid-area: 1 / 1 / 2 / 2;*/
+    /*}*/
+    /*.site-lsidebar{*/
+    /*    grid-area: 2 / 1 / 3 / 2;*/
+    /*}*/
+    /*.site-content{*/
+    /*    grid-area: 3 / 1 / 4 / 2;*/
+    /*}*/
+    /*.site-rsidebar{*/
+    /*    grid-area: 4 / 1 / 5 / 2;*/
+    /*}*/
+    /*.site-footer{*/
+    /*    grid-area: 5 / 1 / 6 / 2;*/
+    /*}*/
+}

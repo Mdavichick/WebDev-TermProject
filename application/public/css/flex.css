@@ -1,0 +1,138 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+}
+
+.box-shadow-light{
+    border: 1px solid white;
+    box-shadow: 0 2px 2px #cccccc;
+}
+
+.box-shadow-dark{
+    /*border: 1px solid #999999;*/
+    box-shadow: 0 2px 2px #888888;
+}
+
+header{
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.row{
+    height: 110px;
+    width: 100%;
+    padding: .15em;
+}
+
+div[class*=col-]{
+    height: 100px;
+    /*border: 1px solid black;*/
+    float:left;
+}
+
+.col-md-1{
+   /* 1 divided by 12 */
+    width: 8.33333%;
+    max-width: 8.33333%;
+    min-width: 30px
+}
+
+.col-md-3{
+    width: 25%;
+    max-width: 25%;
+    min-width: 150px;
+}
+
+.col-md-6{
+    width: 50%;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.col-md-12{
+    width: 100%;
+    max-width:100%;
+    min-width: 600px;
+}
+
+.item{
+    padding: .25rem;
+    margin: 2px;
+    height: 100%
+}
+.flex-row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 200px;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div[class*=flx-]{
+    height: 100px;
+    /*border: 1px solid black;*/
+}
+
+
+.flx-md-1{
+    /* 1 divided by 12 */
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+    min-width: 30px
+}
+
+.flx-md-3{
+    flex: 0 0 25%;
+    max-width: 25%;
+    min-width: 150px;
+}
+
+.flx-md-6{
+    flex: 0 0 50%;
+    /*flex-basis: 50%;*/
+    /*flex-grow:0;*/
+    /*flex-shrink:0;*/
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.flex-item{
+    height: 100px;
+    width:100px;
+    flex-grow: 0;
+    /*order:2*/
+}
+.flex-item2{
+    height: 100px;
+    width:100px;
+    flex-grow: 0;
+    /*order:1;*/
+}
+.flex-item3{
+   /*order:3*/
+}
+.flex-item4{
+    /*order:4*/
+}
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.site-header__wrapper {
+    display: revert;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background: url('https://media-exp1.licdn.com/dms/image/C511BAQE0NnIkjkotGA/company-background_10000/0/1541489744017?e=2159024400&v=beta&t=8CzJngJh5TrtF6_WFRYSlDeycAkT52hAfb4qLYGYnv8');
+    height: 250px;
+    width: 100%;
+}

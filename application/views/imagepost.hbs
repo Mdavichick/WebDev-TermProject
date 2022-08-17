@@ -1,0 +1,20 @@
+<link rel="stylesheet" type = "text/css" href="/public/css/grid.css"/>
+<link rel="stylesheet" type = "text/css" href="/public/css/forms.css"/>
+
+<header class = "box-shadow-light">
+    <h1>Image Post</h1>
+</header>
+
+<div class = "grid-container shadow">
+    <header class = "image-header shadow"> Today's Feature </header>
+    <aside class = "image-lsidebar">Title: {{currentPost.title}}</aside>
+    <aside class = "image-rsidebar">
+    <label class = "author"> Author: {{currentPost.username}}</label>
+
+    </aside>
+    <div class = "image-post"> Creation Time: {{currentPost.created}}</div>
+    <div class = "image-image">
+        <img src="/{{currentPost.photopath}}"  alt="this was a fake image">
+    </div>
+</div>
+

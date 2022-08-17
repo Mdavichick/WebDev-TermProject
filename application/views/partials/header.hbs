@@ -1,0 +1,45 @@
+<header class="box-shadow-light header-background">
+    <h1><img src="https://www.reddevelopment.com/jefferson-pointe/wp-content/uploads/sites/15/2020/04/michaels-stores.png" width="200" height="auto" alt="Header-logo"></h1>
+    <div class = "site-header__wrapper">
+<!--        <a>-->
+<!--            <form name = registration>-->
+                {{log this}}
+                <div class = "col-md-3">
+                    <br>
+<!--                    <a type="button" href ="/home">home</a>-->
+                    <input type="button" onclick="location.href='/home';" value = "Home"/>
+                </div>
+                <div class = "col-md-3">
+                    <br>
+<!--                    <a type="button" href ="/registration">registration</a>-->
+
+
+                    {{#if logged}}
+<!--                        <a  type="button" href ='/users/logout'>Log Out</a>-->
+                        <input id="logout-button" type="button" onclick="location.href='/users/logout';" value="Log Out" />
+                    {{else}}
+<!--                        <a type="button" href ="/registration">Register</a> <br>-->
+                        <input type="button" onclick="location.href='/registration';" value="Register" /> <br>
+<!--                        <a type="login-button" href ="/login">Log In</a>-->
+                        <input id="login-button" type="button" onclick="location.href='/login';" value="Log In" />
+
+                    {{/if}}
+                </div>
+                <div class = "col-md-3">
+                    <br>
+                    <input type="button" onclick="location.href='/postimage';" value="Post Image" />
+<!--                    <br>-->
+<!--                    <input type="button" onclick="location.href='/imagepost';" value="Daily Post" />-->
+                </div>
+                <div class = "col-md-3">
+                    <br>
+                    <input id="search-text" name="search-text" type="text">
+<!--                    <i id="search-button" class="fas fa-search nav-items"></i>-->
+                    <button id="search-button" name="search-button">Submit</button>
+                    <!--                    <input type="button" onclick="location.href='/homepage';" value="Collection" />-->
+                </div>
+<!--            </form>-->
+<!--        </a>-->
+
+    </div>
+</header>

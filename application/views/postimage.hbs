@@ -1,0 +1,43 @@
+<link rel="stylesheet" type = "text/css" href="public/css/grid.css"/>
+<link rel="stylesheet" type = "text/css" href="public/css/form.css"/>
+
+<div class = "grid-container shadow">
+    <header class="site-header"><h1>Post Image</h1></header>
+    <div class = "reddit-post shadow">
+        <form id="post-image" enctype="multipart/form-data" method="POST"
+              action="/posts/createPost">
+            <fieldset>
+                <legend>Details</legend>
+                <label>Post Title</label>
+                <input type="text" name="title"/>
+
+
+                <label>Post Description</label>
+                <input type="text" name="description"/>
+
+
+                <label class = "null">Select Image</label>
+                <input type="file" name="uploadImage"/>
+
+
+                <a href = "https://www.socialmediaexaminer.com/copyright-fair-use-and-how-it-works-for-online-images/">Acceptable Use Policy </a>
+                <br/>
+                <label>I accept: </label>
+                <input type = "checkbox"/>
+
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+    <div class = "image-lsidebar">
+        <div class = "image-image">
+            <img src="https://blog.ipleaders.in/wp-content/uploads/2018/02/BV-Acharya-17.jpg" width="90%" alt = "This was a fake image"></img>
+        </div>
+    </div>
+    <div class = "image-rsidebar">
+        <div class = "image-image">
+            <img src="https://i.ytimg.com/vi/cQ5Fi29BbTE/maxresdefault.jpg" width="90%" alt = "This was a fake image"></img>
+        </div>
+    </div>
+</div>
