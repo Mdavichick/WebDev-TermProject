@@ -1,4 +1,4 @@
-# CSC 317 Term Project
+# Web Development Term Project
 
 ## Purpose
 
@@ -13,7 +13,7 @@ Clone Repo
 - git clone https://github.com/csc317-sp21/csc317-termproject-Mdavichick.git
 
 CD into application 
-- cd .\csc317-termproject-Mdavichick\
+- cd .\WebDev-TermProject\
 - cd .\application\
 
 Build node
