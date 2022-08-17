@@ -10,7 +10,7 @@ Please follow the instructions below and fill in the information requested when 
 
 ## Build Instructions
 Clone Repo
-- git clone https://github.com/csc317-sp21/csc317-termproject-Mdavichick.git
+- git clone https://github.com/Mdavichick/WebDev-TermProject.git
 
 CD into application 
 - cd .\WebDev-TermProject\
